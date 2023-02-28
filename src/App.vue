@@ -16,6 +16,10 @@ export default defineComponent({
 </script>
 
 <style lang="scss">
+html {
+  font-size: 100PX;
+}
+
 body {
   background-color: #1e1e1e;
   color: #eaffff;

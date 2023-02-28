@@ -1,7 +1,7 @@
 const pxToRem = require('postcss-pxtorem');
 
 const pxToRemPlugin = pxToRem({
-  rootValue: 16,
+  rootValue: 100,
   unitPrecision: 2,
   propList: ['*'],
   replace: true,
