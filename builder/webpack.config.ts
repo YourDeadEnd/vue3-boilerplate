@@ -11,7 +11,7 @@ import type { Configuration } from 'webpack';
 const JS_FILE_NAME = '[name].[contenthash:8].js';
 
 const { mode, analyze: bundleAnalyze } = getArgs();
-const isDev = mode === 'production';
+const isDev = mode === 'development';
 
 const target: Target = {
   mode,
