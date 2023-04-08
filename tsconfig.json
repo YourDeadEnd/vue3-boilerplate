@@ -7,9 +7,9 @@
     },
     "sourceMap": true,
     "target": "ESNext",
-    "module": "CommonJS",
+    "module": "ES6",
     "esModuleInterop": true,
-    "moduleResolution": "Node",
+    "moduleResolution": "node",
     "forceConsistentCasingInFileNames": true,
     "jsx": "preserve",
     "skipLibCheck": true,
@@ -23,6 +23,9 @@
   },
   "exclude": ["node_modules"],
   "ts-node": {
-    "transpileOnly": true
+    "transpileOnly": true,
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
   }
 }

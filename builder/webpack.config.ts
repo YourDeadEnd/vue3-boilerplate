@@ -45,9 +45,6 @@ const optimization: Configuration['optimization'] = {
       },
     },
   },
-  minimizer: [
-    new ESBuildMinifyPlugin({ target: 'es2015' }),
-  ],
 };
 
 const config: Configuration = {
