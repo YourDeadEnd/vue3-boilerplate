@@ -1,18 +1,14 @@
 <template>
   <div>
-    {{ message }}
+    <TestComponent :message="message" />
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
+<script lang="ts" setup>
+import { ref } from 'vue';
+import TestComponent from '@/components/TestComponent';
 
-export default defineComponent({
-  name: 'App',
-  data: () => ({
-    message: 'Hello World',
-  }),
-});
+const message = ref('Hello world');
 </script>
 
 <style lang="scss">
